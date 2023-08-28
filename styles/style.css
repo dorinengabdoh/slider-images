@@ -18,7 +18,9 @@ body {
   height: 140px;
   object-fit: cover;
 }
+
  /* styles my images */
+
 .cover .card {
   scroll-snap-align: start;
   list-style: none;
@@ -29,7 +31,6 @@ body {
   align-items: center;
   justify-content: center;
   padding-bottom: 15px;
-  border-radius: 5px;
 }
 
 .slider i {
@@ -42,8 +43,8 @@ body {
   cursor: pointer;
   position: absolute;
   top: 32%;
-  transform:translateY(-50%);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  box-shadow: 0 3px 6px #0000003b;
   font-size: 1.25rem;
 }
 
@@ -81,12 +82,10 @@ body {
 .cover.dragging .card {
   cursor: grab;
   user-select: none;
-
 }
 
-.cover {
+.slider .cover {
   list-style: none;
-  /* background-color: #fff; */
   border-radius: 10px;
   height: 342px;
   padding-left: 20px;
@@ -99,6 +98,7 @@ body {
   position: relative;
   flex-wrap: wrap;
 }
+
 h1 {
   text-align: center;
   padding: 100px 0;
@@ -109,15 +109,11 @@ h1 {
 @media screen and (max-width: 900px) {
   .slider .cover {
     grid-auto-columns: calc((100% / 2) - 9px);
-
-  }
-  
+  } 
 }
 
 @media screen and (max-width: 600px) {
   .slider .cover {
     grid-auto-columns: 100%;
-
-  }
-  
+  } 
 }
