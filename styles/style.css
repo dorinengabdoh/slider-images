@@ -19,8 +19,6 @@ body {
   object-fit: cover;
 }
 
- /* styles my images */
-
 .cover .card {
   scroll-snap-align: start;
   list-style: none;
@@ -56,17 +54,6 @@ body {
   right: -22px;
 }
 
-.slider .cover {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 3) -12px);
-  gap: 16px;
-  overflow-y: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  scrollbar-width: y 0;
-}
-
 .cover.no-transition {
   scroll-behavior: auto;
 }
@@ -90,6 +77,14 @@ body {
   height: 342px;
   padding-left: 20px;
   flex-wrap: wrap;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3)-12px);
+  gap: 16px;
+  overflow-y: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: y 0;
 }
 
 .slider {
@@ -115,5 +110,5 @@ h1 {
 @media screen and (max-width: 600px) {
   .slider .cover {
     grid-auto-columns: 100%;
-  } 
+  }
 }
