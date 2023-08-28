@@ -79,7 +79,7 @@ body {
   flex-wrap: wrap;
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc(100% / 3 -12px);
+  grid-auto-columns: calc(33,33% -12px);
   gap: 16px;
   overflow-y: auto;
   scroll-snap-type: x mandatory;
