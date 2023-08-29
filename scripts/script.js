@@ -47,7 +47,7 @@ const dragStop = () => {
   isDragging = false
   cover.classList.remove('dragging')
 }
-
+// eslint no-return-assign"
 const infiniteScroll = () => {
   if (cover.scrollLeft === 0) {
     cover.classList.add('no-transition')
