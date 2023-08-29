@@ -27,7 +27,7 @@ arrowBtns.forEach(btn => {
 // autoplay card
 
 const autoplay = () => {
-  if (window.innerWidth < 800) return
+  if (window.innerWidth < 800) this.
   // autoplay in 2500ms
   timeoutId = setTimeout(() => cover.scrollLeft += firstCardWidth, 2000)
 }
