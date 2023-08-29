@@ -1,3 +1,4 @@
+// eslint no-return-assign
 const cover = document.querySelector('.cover')
 const slider = document.querySelector('.slider')
 const arrowBtns = document.querySelectorAll('.slider i')
@@ -47,7 +48,6 @@ const dragStop = () => {
   isDragging = false
   cover.classList.remove('dragging')
 }
-// eslint no-return-assign"
 const infiniteScroll = () => {
   if (cover.scrollLeft === 0) {
     cover.classList.add('no-transition')
